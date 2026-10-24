@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Política de privacidade da integração pessoal Khepri Backup com Google Drive e Rclone.">
+  <title>Política de privacidade | Khepri Backup</title>
+  <style>
+    :root{color-scheme:dark;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    *{box-sizing:border-box}
+    body{margin:0;background:#0a1417;color:#eef4f2;line-height:1.75;min-height:100vh}
+    a{color:#88e0cd;text-underline-offset:3px}a:hover{color:#c1f7ea}
+    .wrap{width:min(800px,calc(100% - 40px));margin:auto}
+    header{border-bottom:1px solid #253c3e;padding:24px 0}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{font-weight:750;letter-spacing:.03em;color:#d1f3e9;text-decoration:none}
+    main{padding:75px 0 90px}
+    .eyebrow{font-size:.8rem;color:#89e6cd;font-weight:750;letter-spacing:.12em;text-transform:uppercase}
+    h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.15;letter-spacing:-.035em;margin:15px 0 20px}
+    h2{font-size:1.15rem;margin:34px 0 10px}
+    p,li{color:#c1d0cd;margin:0 0 12px}
+    ul{padding-left:22px}
+    .intro{font-size:1.1rem}
+    .info{border:1px solid #31544e;background:#112924;border-radius:12px;padding:18px 20px;margin:28px 0}
+    footer{border-top:1px solid #253c3e;padding:22px 0;color:#96aaa5;font-size:.87rem}
+  </style>
+</head>
+<body>
+  <header><nav class="wrap"><a class="brand" href="index.html">KHEPRI BACKUP</a><a href="index.html">← Página inicial</a></nav></header>
+  <main class="wrap">
+    <p class="eyebrow">Transparência e acesso aos dados</p>
+    <h1>Política de privacidade</h1>
+    <p class="intro">Esta política descreve o uso pessoal da integração Khepri Backup, que combina KeePassXC, Rclone e Google Drive para manter cópias de segurança de um banco de senhas criptografado.</p>
+    <div class="info"><strong>Última atualização:</strong> 24 de outubro de 2026.<br><strong>Natureza:</strong> automação privada, sem cadastro de clientes ou oferta de armazenamento ao público.</div>
+    <h2>1. Finalidade</h2>
+    <p>A aplicação OAuth permite ao programa Rclone, executado no computador do titular, acessar a conta Google Drive autorizada para enviar, listar e conferir backups de arquivos KDBX criptografados. Os arquivos também são mantidos localmente.</p>
+    <h2>2. Permissões e dados acessados</h2>
+    <p>A integração pode solicitar permissão de acesso completo aos arquivos do Google Drive da conta autorizada (escopo <code>https://www.googleapis.com/auth/drive</code>). Essa permissão é mais ampla que a pasta de backup e é usada pelo Rclone para consultar os backups existentes e gravar novas versões. A rotina de backup foi projetada para atuar na pasta designada pelo titular.</p>
+    <p>O Rclone pode processar metadados como nomes de arquivos, pastas, tamanhos e identificadores, além dos próprios arquivos necessários à operação de cópia e verificação.</p>
+    <h2>3. Proteção do conteúdo</h2>
+    <p>Os bancos de senhas são criptografados pelo KeePassXC antes da transferência. A automação não precisa receber nem transmitir a senha mestra do banco. A criptografia não impede que nomes de arquivo e outros metadados fiquem visíveis aos serviços de armazenamento envolvidos.</p>
+    <h2>4. Armazenamento e compartilhamento</h2>
+    <p>Os backups ficam no dispositivo do titular e na conta Google Drive por ele autorizada. O conteúdo armazenado no Google Drive está sujeito às condições e práticas de privacidade do Google. Esta integração pessoal não vende dados, não mantém um servidor próprio para receber esses arquivos e não os distribui deliberadamente a terceiros.</p>
+    <h2>5. Tokens e credenciais OAuth</h2>
+    <p>As credenciais e tokens de acesso do Rclone são mantidos na configuração local da ferramenta, sob responsabilidade do titular. Não são incorporados às páginas públicas deste site. O acesso pode ser revogado nas configurações de segurança da Conta Google.</p>
+    <h2>6. Retenção e exclusão</h2>
+    <p>As cópias de backup são mantidas até que o titular as exclua manualmente ou altere sua política de retenção. A automação de backup pessoal descrita aqui não foi concebida para apagar automaticamente as versões anteriores no Google Drive.</p>
+    <h2>7. Este site informativo</h2>
+    <p>Este site é estático, hospedado pelo GitHub Pages. Não contém formulário de cadastro, autenticação, cookies de rastreamento próprios ou scripts próprios de análise de visitantes. A plataforma de hospedagem pode tratar registros técnicos conforme suas próprias políticas.</p>
+    <h2>8. Contato e alterações</h2>
+    <p>Informações sobre o responsável estão disponíveis no <a href="https://github.com/RafaFilastro" rel="noopener noreferrer">perfil do GitHub</a>. Esta política poderá ser atualizada quando o funcionamento da automação mudar.</p>
+    <p><a href="index.html">← Voltar à página inicial</a></p>
+  </main>
+  <footer><div class="wrap">© 2026 Khepri Backup · Integração pessoal</div></footer>
+</body>
+</html>
